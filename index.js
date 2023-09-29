@@ -2,8 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const port = 8888;
-
+const PORT = process.env.PORT || 8888;
 app.use(express.json());
 app.use(cors());
 
@@ -18,6 +17,6 @@ app.post("/generate_token", auth.generateToken);
 app.get("/tracking_parcel/:tracking_number", api.trackParcel);
 
 // I use port 8888
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`Server running on port ${port}`);
 });
