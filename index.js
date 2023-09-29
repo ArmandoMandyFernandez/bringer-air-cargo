@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 const PORT = process.env.PORT || 8888;
+
 app.use(express.json());
 app.use(cors());
 
@@ -18,5 +19,5 @@ app.get("/tracking_parcel/:tracking_number", api.trackParcel);
 
 // I use port 8888
 app.listen(PORT, () => {
-    console.log(`Server running on port ${port}`);
+    console.log(`Server running on port ${PORT}`);
 });
