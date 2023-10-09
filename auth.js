@@ -11,7 +11,7 @@ function generateToken(req, res) {
         }
 
         // Create a JWT Token
-        const token = jwt.sign({ login, password }, {secretKey});
+        const token = jwt.sign({ login, password }, secretKey);
 
         // Response with the token
         res.status(200).json({ token });
