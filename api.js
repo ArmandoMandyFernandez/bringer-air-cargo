@@ -18,6 +18,7 @@ async function trackParcel(req, res) {
                 },
             }
         );
+
         
         // Storing the parcel information
         const parcelInfo = response.data;
