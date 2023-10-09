@@ -25,3 +25,8 @@ These dependencies are automatically installed when you run `npm install` as spe
 To run the server first run the command code `npm install` to ensure you have installed all the packages and after run `node server.js` to run the server. 
 
 To access the server go to your browser and enter the URL `http://localhost:8888`
+
+# Acknowledgments
+Thank you to the team at Bringer Air Cargo
+
+-Mandy
